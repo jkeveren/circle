@@ -1,12 +1,9 @@
 #include <iostream>
-#include <chrono>
-#include <thread>
 #include <sys/ioctl.h>
 #include <signal.h>
 #include <math.h>
-#include <cstdlib>
 
-using namespace std;
+using std::cout;
 
 void render(int) {
   struct winsize ws;
@@ -49,6 +46,6 @@ int main() {
   signal(SIGINT, cleanExit);
 
   // Don't exit. Wait for signnals.
-  cin.ignore();
+  std::cin.ignore();
   return 0;
 }
