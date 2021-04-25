@@ -13,7 +13,7 @@ void render(int) {
   cout << "\033[0m\033[2J\033[47m";
 
   // Roughly calculate number of points required for a full circle.
-  int pointCount = ws.ws_row * 2 + ws.ws_col * 2;
+  int pointCount = (ws.ws_row + ws.ws_col) * 10;
 
   // Center the circle and account for the top-leftedness of the character coordinates.
   float centerX = (float)(ws.ws_row - 1) / 2 + 1;
