@@ -1,2 +1,2 @@
-circle: circle.cpp
-	g++ -o circle circle.cpp
+elipse: elipse.cpp
+	g++ -o elipse elipse.cpp
